@@ -32,7 +32,7 @@ then
 	if [ $sel = "Y" ] || [ $sel = "y" ]
 	then
 		true
-	elif [ \( $sel = "B" -o $sel = "b" \) ] && [ ! -e ~/.vimrc_bckp ]
+	elif [ \( $sel = "B" -o $sel = "b" \) ] && [ ! -e ~/.vimrc_bckp ]	# elif [[ $sel = "B" || $sel = "b" ]] && [ ! -e ~/.vimrc_bckp ]
 	then
 		echo "[*] mv ~/.vimrc ~/.vimrc_bckp"
 		mv ~/.vimrc ~/.vimrc_bckp
