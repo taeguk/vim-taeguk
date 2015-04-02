@@ -23,7 +23,7 @@ then
 	rm -rf ~/.vim
 fi
 
-echo "[*] checking ~/.vimrc existed..."
+echo -e "\n[*] checking ~/.vimrc existed..."
 if [ -e ~/.vimrc ]
 then
 	echo "[!] existing ~/.vimrc founded!!"
