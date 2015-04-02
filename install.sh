@@ -28,7 +28,7 @@ then
 	echo "[!] existing ~/.vimrc founded!!"
 	echo -n "Do you delete original .vimrc ?? (Y/N/B) >> "
 	read sel
-	if [ $sel = Y || $sel = "y" ]
+	if [ $sel = "Y" || $sel = "y" ]
 	then
 		:
 	elif [ \( $sel = "B" -o $sel = "b" \) ] && [ ! -e ~/.vimrc_bckp ]
