@@ -1,0 +1,3 @@
+Usage
+
+	bash install.sh
