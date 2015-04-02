@@ -8,9 +8,11 @@ then
 	echo "[!] existing ~/.vim founded!!"
 	echo -n "Do you delete original .vim ?? (Y/N/B) >> "
 	read sel
-	if [ $sel = 'Y' || $sel = 'y' ]; then
+	if [ $sel = "Y" ] || [ $sel = "y" ]
+	then
 		:
-	elif [ \( $sel = 'B' -o $sel = 'b' \) ] && [ ! -e ~/.vim_bckp ]; then
+	elif [ \( $sel = "B" -o $sel = "b" \) ] && [ ! -e ~/.vim_bckp ]
+	then
 		mv ~/.vim ~/.vim_bckp
 	else
 		echo "[*] task calcelled!"
@@ -26,9 +28,11 @@ then
 	echo "[!] existing ~/.vimrc founded!!"
 	echo -n "Do you delete original .vimrc ?? (Y/N/B) >> "
 	read sel
-	if [ $sel = 'Y' || $sel = 'y' ]; then
+	if [ $sel = Y || $sel = "y" ]
+	then
 		:
-	elif [ \( $sel = 'B' -o $sel = 'b' \) ] && [ ! -e ~/.vimrc_bckp ]; then
+	elif [ \( $sel = "B" -o $sel = "b" \) ] && [ ! -e ~/.vimrc_bckp ]
+	then
 		mv ~/.vimrc ~/.vimrc_bckp
 	else
 		echo "[*] task calcelled!"
