@@ -9,7 +9,7 @@ then
 	echo -n "Do you delete original .vim ?? (Y/N/B) >> "
 	read sel
 	if [ sel = 'Y' || sel = 'y' ]; then
-		:
+		true
 	elif [ \( sel = 'B' -o sel = 'b' \) ] && [ ! -e ~/.vim_bckp ]; then
 		mv ~/.vim ~/.vim_bckp
 	else
@@ -27,7 +27,7 @@ then
 	echo -n "Do you delete original .vimrc ?? (Y/N/B) >> "
 	read sel
 	if [ sel = 'Y' || sel = 'y' ]; then
-		:
+		true
 	elif [ \( sel = 'B' -o sel = 'b' \) ] && [ ! -e ~/.vimrc_bckp ]; then
 		mv ~/.vimrc ~/.vimrc_bckp
 	else
