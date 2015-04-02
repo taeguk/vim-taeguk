@@ -10,9 +10,10 @@ then
 	read sel
 	if [ $sel = "Y" ] || [ $sel = "y" ]
 	then
-		:
+		true
 	elif [ \( $sel = "B" -o $sel = "b" \) ] && [ ! -e ~/.vim_bckp ]
 	then
+		echo "[*] mv ~/.vim ~/.vim_bckp"
 		mv ~/.vim ~/.vim_bckp
 	else
 		echo "[*] task calcelled!"
@@ -28,11 +29,12 @@ then
 	echo "[!] existing ~/.vimrc founded!!"
 	echo -n "Do you delete original .vimrc ?? (Y/N/B) >> "
 	read sel
-	if [ $sel = "Y" || $sel = "y" ]
+	if [ $sel = "Y" ] || [ $sel = "y" ]
 	then
-		:
+		true
 	elif [ \( $sel = "B" -o $sel = "b" \) ] && [ ! -e ~/.vimrc_bckp ]
 	then
+		echo "[*] mv ~/.vimrc ~/.vimrc_bckp"
 		mv ~/.vimrc ~/.vimrc_bckp
 	else
 		echo "[*] task calcelled!"
