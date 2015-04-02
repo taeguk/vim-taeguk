@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "\n-----vim-taeguk---follow-taeguk-----\n"
+echo -e "\n ********** vim-taeguk ********** \n"
 
 if [ -e "~/.vim" ]
 then
@@ -8,6 +8,7 @@ then
 	echo -n "Do you delete original .vim ?? (Y/N) >> "
 	read sel
 	if [ sel != 'Y' && sel != 'y' ]
+	then
 		echo "[*] task calcelled!"
 		exit 1
 	fi
@@ -20,6 +21,7 @@ then
 	echo -n "Do you delete original .vimrc ?? (Y/N) >> "
 	read sel
 	if [ sel != 'Y' && sel != 'y' ]
+	then
 		echo "[*] task calcelled!"
 		exit 1
 	fi
