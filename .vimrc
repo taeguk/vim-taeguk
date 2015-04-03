@@ -74,13 +74,13 @@ set cindent
 set autoindent
 set hi=1000
 set title
-set titleold=Comet
+set titleold=vim-taeguk
 
 set hls
 set scs
 
 colorscheme diablo3
-set t_Co=256		"requried for molokai (bundle)
+set t_Co=256
 
 "syntax on
 
