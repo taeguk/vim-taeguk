@@ -4,7 +4,7 @@ vim-taeguk
 About
 -----
 
-#####Automatically adjust settings to taeguk's vimsetting and install useful plugins.
+######Automatically adjust settings to taeguk's vimsetting and install useful plugins.
 
 Installing
 ----------
