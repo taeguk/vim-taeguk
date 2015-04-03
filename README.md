@@ -1,6 +1,5 @@
-
-
-8ollow 8ollow taeguk.
+vim-taeguk
+=============
 
 How to install the newest vim-taeguk
 
