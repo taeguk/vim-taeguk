@@ -7,11 +7,11 @@ __How to install the newest vim-taeguk__
 	cd vim-taeguk/
 	bash install.sh
 	
-__How to install the release version v1.1__
+__How to install the release version v1.1.1__
 
-	wget https://github.com/taeguk/vim-taeguk/archive/v1.1.tar.gz
-	tar -xvzf v1.1.tar.gz
-	cd vim-taeguk-1.1/
+	wget https://github.com/taeguk/vim-taeguk/archive/v1.1.1.tar.gz
+	tar -xvzf v1.1.1.tar.gz
+	cd vim-taeguk-1.1.1/
 	bash install.sh
 	
 __abbreviation__
