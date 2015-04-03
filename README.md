@@ -31,7 +31,7 @@ Trouble Shooting
 __Taglist error is occured or Tlist is not working__
 
 	Go to "issue tab" and see the relevant issues.
-	Link : https://github.com/taeguk/vim-taeguk/issues/1
+	[See issue](https://github.com/taeguk/vim-taeguk/issues/1)
 
 	
 ETC
@@ -39,8 +39,8 @@ ETC
 
 __GOOD LINKS__
 
-	http://taeguk.me
-	http://www.morenice.kr/117
-	https://dobest.io/install-vundle-and-nerdtree/
-	https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
+	[Developer Site](http://taeguk.me)
+	(http://www.morenice.kr/117)
+	[https://dobest.io/install-vundle-and-nerdtree/]
+	[https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/]
 
