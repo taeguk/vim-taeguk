@@ -19,12 +19,14 @@ echo -e "\n[*] checking if ~/.vim exists..."
 if [ -e ~/.vim ]
 then
 	echo "[!] existing ~/.vim founded!!"
-	echo -n "Do you delete original .vim ?? (Y/N/B) >> "
+	echo -n "Do you delete original .vim ?? (Y/N/B/M) >> "
 	read sel
 	if [ $sel = "Y" ] || [ $sel = "y" ]
 	then
 		echo "[*] rm -rf ~/.vim"
 		rm -rf ~/.vim
+		echo "[*] cp -rf .vim ~/"
+		cp -rf .vim ~/
 	elif [ \( $sel = "B" -o $sel = "b" \) ]
 	then
 		if [ -e ~/.vim_bckp ]; then
@@ -34,6 +36,19 @@ then
 		fi
 		echo "[*] mv ~/.vim ~/.vim_bckp"
 		mv ~/.vim ~/.vim_bckp
+		echo "[*] cp -rf .vim ~/"
+		cp -rf .vim ~/
+	elif [[ $sel = "M" || $sel = "m" ]]
+	then
+		hash rsync 1>&2 2>/dev/null
+		if [ $? -ne 0 ]
+		then
+			echo "[!] Cannot Merge mode!"
+			echo "[*] task calcelled!"
+			exit 1
+		fi
+		echo "[*] rsync -a .vim/ ~/.vim/"
+		rsync -a .vim/ ~/.vim/
 	else
 		echo "[*] task calcelled!"
 		exit 1
@@ -50,6 +65,8 @@ then
 	then
 		echo "[*] rm -rf ~/.vimrc"
 		rm -rf ~/.vimrc
+		echo "[*] cp -rf .vimrc ~/"
+		cp -rf .vimrc ~/
 	elif [ \( $sel = "B" -o $sel = "b" \) ]
 	then
 		if [ -e ~/.vimrc_bckp ]; then
@@ -59,17 +76,28 @@ then
 		fi
 		echo "[*] mv ~/.vimrc ~/.vimrc_bckp"
 		mv ~/.vimrc ~/.vimrc_bckp
+		echo "[*] cp -rf .vimrc ~/"
+		cp -rf .vimrc ~/
 	else
 		echo "[*] task calcelled!"
 		exit 1
 	fi
 fi
 
-echo -e "\n[*] install start!"
-rm -rf ~/.vim ~/.vimrc
-cp -rf .vim .vimrc ~/
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+echo -e "\n[*] Plugin managing start!"
+if [ ! -d ~/.vim/bundle/Vundle.vim ]
+then
+	echo "[*] Vundle.vim install...!"
+	git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
+echo "[*] Plugin clean start!"
+vim +PluginClean +qall
+echo "[*] Plugin clean finish!"
+echo "[*] Plugin install start!"
 vim +PluginInstall +qall
-echo "[*] install finish!"
+echo "[*] Plugin install finish!"
+echo "[*] Plugin managing finish!"
+
+echo -e "\n[*] All progress was done!\n"
 
 exit 0
