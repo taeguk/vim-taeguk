@@ -40,7 +40,7 @@ Trouble Shooting
 	
 GOOD LINKS
 ----------
-#####[taeguk.me](http://taeguk.me)
+####[taeguk.me](http://taeguk.me)
 
 http://www.morenice.kr/117
 
