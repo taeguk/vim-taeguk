@@ -30,7 +30,7 @@ Trouble Shooting
 
 __Q1. Taglist error is occured or Tlist is not working__
 
-__A1. Go to "issue tab" and see the relevant issues. [See Taglist issue]__
+A1. Go to "issue tab" and see the relevant issues. [See Taglist issue]
 
 	
 GOOD LINKS
