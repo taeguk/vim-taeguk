@@ -41,8 +41,9 @@ Plugin 'honza/vim-snippets'
 "srcexpl
 Plugin 'Source-Explorer-srcexpl.vim'
 "vim-powerline
-Plugin 'https://github.com/Lokaltog/vim-powerline.git'
-
+"Plugin 'https://github.com/Lokaltog/vim-powerline.git'
+"vim-airline
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -96,9 +97,36 @@ set showmatch
 set nu
 
 "for vim-powerline
-language en_US.UTF-8
-let g:Powerline_symbols = 'fancy'
-set laststatus=2
+"language en_US.UTF-8
+"let g:Powerline_symbols = 'fancy'
+"set laststatus=2
 
 map <C-n> :NERDTreeToggle<CR>
 nmap <F8> :Tlist<CR>
+
+
+"for vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" This allows buffers to be hidden if you've modified a buffer.
+" This is almost a must if you wish to use buffers in this way.
+set hidden
+
+" To open a new empty buffer
+" This replaces :tabnew which I used to bind to this mapping
+nmap <leader>T :enew<cr>
+
+" Move to the next buffer
+nmap <leader>l :bnext<CR>
+
+" Move to the previous buffer
+nmap <leader>h :bprevious<CR>
+
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+nmap <leader>bq :bp <BAR> bd #<CR>
+
+" Show all open buffers and their status
+nmap <leader>bl :ls<CR>
