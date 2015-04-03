@@ -34,7 +34,7 @@ Trouble Shooting
 	
 GOOD LINKS
 ----------
-[Developer Site](http://taeguk.me)
+[taeguk.me](http://taeguk.me)
 
 http://www.morenice.kr/117
 
