@@ -19,7 +19,7 @@ echo -e "\n[*] checking if ~/.vim exists..."
 if [ -e ~/.vim ]
 then
 	echo "[!] existing ~/.vim founded!!"
-	echo -n "Do you delete original .vim ?? (Y/N/B/M) >> "
+	echo -n "Do you delete original .vim ?? (Y/N/B/U) >> "
 	read sel
 	if [ $sel = "Y" ] || [ $sel = "y" ]
 	then
@@ -38,12 +38,12 @@ then
 		mv ~/.vim ~/.vim_bckp
 		echo "[*] cp -rf .vim ~/"
 		cp -rf .vim ~/
-	elif [[ $sel = "M" || $sel = "m" ]]
+	elif [[ $sel = "U" || $sel = "u" ]]
 	then
 		hash rsync 1>&2 2>/dev/null
 		if [ $? -ne 0 ]
 		then
-			echo "[!] Cannot Merge mode!"
+			echo "[!] Can run in Update mode!"
 			echo "[*] task calcelled!"
 			exit 1
 		fi
