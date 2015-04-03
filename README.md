@@ -31,7 +31,7 @@ Trouble Shooting
 __Taglist error is occured or Tlist is not working__
 
 	Go to "issue tab" and see the relevant issues.
-	[See Taglist issue]
+	[See Taglist issue] 
 
 	
 ETC
