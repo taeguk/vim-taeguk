@@ -2,7 +2,6 @@ vim-taeguk
 =============
 
 How to install the newest vim-taeguk
-
 	git clone https://github.com/taeguk/vim-taeguk.git
 	cd vim-taeguk/
 	bash install.sh
