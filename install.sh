@@ -43,7 +43,7 @@ then
 		hash rsync 1>&2 2>/dev/null
 		if [ $? -ne 0 ]
 		then
-			echo "[!] Can run in Update mode!"
+			echo "[!] Cannot run in Update mode!"
 			echo "[*] task calcelled!"
 			exit 1
 		fi
