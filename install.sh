@@ -54,7 +54,7 @@ then
 	fi
 fi
 
-echo "[*] install start!"
+echo -e "\n[*] install start!"
 rm -rf ~/.vim ~/.vimrc
 cp -rf .vim .vimrc ~/
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
