@@ -19,6 +19,7 @@ __abbreviation__
 	Y : Yes
 	N : No
 	B : Backup
+	U : Update
 
 __GOOD LINKS__
 
