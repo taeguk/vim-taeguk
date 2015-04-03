@@ -11,7 +11,7 @@ __How to install the release version v1.0__
 
 	wget https://github.com/taeguk/vim-taeguk/archive/v1.0.tar.gz
 	tar -xvzf v1.0.tar.gz
-	cd vim-taeguk/
+	cd vim-taeguk-1.0/
 	bash install.sh
 	
 __abbreviation__
