@@ -4,7 +4,18 @@
 
 echo -e "\n ********** vim-taeguk ********** \n"
 
-echo "[*] checking if ~/.vim exists..."
+git_fail() {
+	echo "
+		[!] git is not installed in system!
+		[!] git must be required to vim-taeguk!
+		[!] please install git before installing vim-taeguk
+		"
+}
+
+echo "[*] checking if git is installed..."
+hash git || (git_fail && exit 1) || exit 1
+
+echo -e "\n[*] checking if ~/.vim exists..."
 if [ -e ~/.vim ]
 then
 	echo "[!] existing ~/.vim founded!!"
@@ -57,7 +68,6 @@ fi
 echo -e "\n[*] install start!"
 rm -rf ~/.vim ~/.vimrc
 cp -rf .vim .vimrc ~/
-hash git || (bash git_install_home.sh && exit 1)
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 echo "[*] install finish!"
