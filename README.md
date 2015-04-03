@@ -5,7 +5,7 @@ Installing
 ----------
 
 __How to install the newest vim-taeguk__
-
+	
 	git clone https://github.com/taeguk/vim-taeguk.git
 	cd vim-taeguk/
 	bash install.sh
@@ -28,17 +28,13 @@ __abbreviation__
 Trouble Shooting
 ----------------
 
-__Taglist error is occured or Tlist is not working__
-
-	Go to "issue tab" and see the relevant issues.
-	[a] 
+__Q1. Taglist error is occured or Tlist is not working__
+Go to "issue tab" and see the relevant issues.
+[See Taglist issue]
 
 	
-ETC
----
-
-__GOOD LINKS__
-
+GOOD LINKS
+----------
 	[Developer Site](http://taeguk.me)
 	(http://www.morenice.kr/117)
 	[https://dobest.io/install-vundle-and-nerdtree/]
