@@ -29,8 +29,8 @@ Trouble Shooting
 ----------------
 
 __Q1. Taglist error is occured or Tlist is not working__
-Go to "issue tab" and see the relevant issues.
-[See Taglist issue]
+
+__A1. Go to "issue tab" and see the relevant issues. [See Taglist issue]__
 
 	
 GOOD LINKS
