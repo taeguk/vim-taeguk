@@ -13,7 +13,7 @@ git_fail() {
 }
 
 echo "[*] checking if git is installed..."
-hash git || (git_fail && exit 1) || exit 1
+hash git || (git_fail ; exit 1) || exit 1
 
 echo -e "\n[*] checking if ~/.vim exists..."
 if [ -e ~/.vim ]
