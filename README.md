@@ -28,9 +28,9 @@ __abbreviation__
 Trouble Shooting
 ----------------
 
-###Q1. Taglist error is occured or Tlist is not working
+#####Q1. Taglist error is occured or Tlist is not working
 
-	Answer) Go to "issue tab" and see the relevant issues. [See Taglist issue]
+   Answer) Go to "issue tab" and see the relevant issues. [See Taglist issue]
 
 	
 GOOD LINKS
