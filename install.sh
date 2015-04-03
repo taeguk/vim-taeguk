@@ -2,7 +2,7 @@
 
 echo -e "\n ********** vim-taeguk ********** \n"
 
-echo "[*] checking ~/.vim existed..."
+echo "[*] checking if ~/.vim exists"
 if [ -e ~/.vim ]
 then
 	echo "[!] existing ~/.vim founded!!"
@@ -10,17 +10,21 @@ then
 	read sel
 	if [ $sel = "Y" ] || [ $sel = "y" ]
 	then
-		true
-	elif [ \( $sel = "B" -o $sel = "b" \) ] && [ ! -e ~/.vim_bckp ]
+		echo "[*] rm -rf ~/.vim"
+		rm -rf ~/.vim
+	elif [ \( $sel = "B" -o $sel = "b" \) ]
 	then
+		if [ -e ~/.vim_bckp ]; then
+			echo "[!] ~/.vim_bckp exists!!"
+			echo "[*] task calcelled!"
+			exit 1
+		fi
 		echo "[*] mv ~/.vim ~/.vim_bckp"
 		mv ~/.vim ~/.vim_bckp
 	else
 		echo "[*] task calcelled!"
 		exit 1
 	fi
-	echo "[*] rm -rf ~/.vim"
-	rm -rf ~/.vim
 fi
 
 echo -e "\n[*] checking ~/.vimrc existed..."
@@ -31,17 +35,21 @@ then
 	read sel
 	if [ $sel = "Y" ] || [ $sel = "y" ]
 	then
-		true
-	elif [ \( $sel = "B" -o $sel = "b" \) ] && [ ! -e ~/.vimrc_bckp ]	# elif [[ $sel = "B" || $sel = "b" ]] && [ ! -e ~/.vimrc_bckp ]
+		echo "[*] rm -rf ~/.vimrc"
+		rm -rf ~/.vimrc
+	elif [ \( $sel = "B" -o $sel = "b" \) ]
 	then
+		if [ -e ~/.vimrc_bckp ]; then
+			echo "[!] ~/.vimrc_bckp exists!!"
+			echo "[*] task calcelled!"
+			exit 1
+		fi
 		echo "[*] mv ~/.vimrc ~/.vimrc_bckp"
 		mv ~/.vimrc ~/.vimrc_bckp
 	else
 		echo "[*] task calcelled!"
 		exit 1
 	fi
-	echo "[*] rm -rf ~/.vimrc"
-	rm -rf ~/.vimrc
 fi
 
 echo "[*] install start!"
