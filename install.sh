@@ -6,9 +6,9 @@ echo -e "\n ********** vim-taeguk ********** \n"
 
 git_fail() {
 	echo "
-		[!] git is not installed in system!
-		[!] git must be required to vim-taeguk!
-		[!] please install git before installing vim-taeguk
+[!] git is not installed in system!
+[!] git must be required to vim-taeguk!
+[!] please install git before installing vim-taeguk
 		"
 }
 
