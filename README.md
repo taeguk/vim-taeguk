@@ -1,4 +1,4 @@
-	8ollow 8ollow taeguk.
+8ollow 8ollow taeguk.
 
 Usage
 
@@ -6,7 +6,7 @@ Usage
 
 GOOD LINKS
 
-	https://dobest.io/install-vundle-and-nerdtree/
 	http://taeguk.me
 	http://www.morenice.kr/117
+	https://dobest.io/install-vundle-and-nerdtree/
 
