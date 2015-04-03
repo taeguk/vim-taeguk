@@ -1,6 +1,9 @@
 vim-taeguk
 =============
 
+Installing
+----------
+
 __How to install the newest vim-taeguk__
 
 	git clone https://github.com/taeguk/vim-taeguk.git
@@ -20,6 +23,17 @@ __abbreviation__
 	N : No
 	B : Backup
 	U : Update
+
+Trouble Shooting
+----------------
+
+__Taglist error is occured or Tlist is not working__
+
+	Go to "issue tab" and see the relevant issues.
+	Link : https://github.com/taeguk/vim-taeguk/issues/1
+	
+ETC
+---
 
 __GOOD LINKS__
 
