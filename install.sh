@@ -91,7 +91,7 @@ then
 	git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 echo "[*] Plugin clean start!"
-vim +PluginClean +qall
+vim +PluginClean! +qall
 echo "[*] Plugin clean finish!"
 echo "[*] Plugin install start!"
 vim +PluginInstall +qall
