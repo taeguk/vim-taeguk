@@ -40,6 +40,8 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 "srcexpl
 Plugin 'Source-Explorer-srcexpl.vim'
+"vim-powerline
+Plugin 'https://github.com/Lokaltog/vim-powerline.git'
 
 
 " All of your Plugins must be added before the following line
@@ -92,6 +94,11 @@ set smartcase
 set showmatch
 "set ai
 set nu
+
+"for vim-powerline
+language en_US.UTF-8
+let g:Powerline_symbols = 'fancy'
+set laststatus=2
 
 map <C-n> :NERDTreeToggle<CR>
 nmap <F8> :Tlist<CR>
