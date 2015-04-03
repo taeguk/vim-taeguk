@@ -1,8 +1,10 @@
 #!/bin/bash
+# hahaha
+# https://github.com/taeguk/vim-taeguk.git
 
 echo -e "\n ********** vim-taeguk ********** \n"
 
-echo "[*] checking if ~/.vim exists"
+echo "[*] checking if ~/.vim exists..."
 if [ -e ~/.vim ]
 then
 	echo "[!] existing ~/.vim founded!!"
@@ -27,7 +29,7 @@ then
 	fi
 fi
 
-echo -e "\n[*] checking ~/.vimrc existed..."
+echo -e "\n[*] checking if ~/.vimrc exists..."
 if [ -e ~/.vimrc ]
 then
 	echo "[!] existing ~/.vimrc founded!!"
