@@ -35,10 +35,9 @@ Go to "issue tab" and see the relevant issues.
 	
 GOOD LINKS
 ----------
-	[Developer Site](http://taeguk.me)
-	(http://www.morenice.kr/117)
-	[https://dobest.io/install-vundle-and-nerdtree/]
-	[https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/]
+[Developer Site](http://taeguk.me)
+[http://www.morenice.kr/117]
+[https://dobest.io/install-vundle-and-nerdtree/]
+[https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/]
 
 [See Taglist issue]:https://github.com/taeguk/vim-taeguk/issues/1
-[a]:https://github.com/taeguk/vim-taeguk/issues/1
