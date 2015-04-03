@@ -5,12 +5,7 @@ About
 -----
 
 ######Taeguk's Vim Setting!
-######Automatically adjust vim settings to taeguk's things and install useful plugins.
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+Automatically adjust vim settings to taeguk's things and install useful plugins.
 
 Installing
 ----------
@@ -45,7 +40,7 @@ Trouble Shooting
 	
 GOOD LINKS
 ----------
-[taeguk.me](http://taeguk.me)
+#####[taeguk.me](http://taeguk.me)
 
 http://www.morenice.kr/117
 
