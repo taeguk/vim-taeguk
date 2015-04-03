@@ -24,6 +24,7 @@ __abbreviation__
 	B : Backup
 	U : Update
 
+
 Trouble Shooting
 ----------------
 
@@ -31,6 +32,7 @@ __Taglist error is occured or Tlist is not working__
 
 	Go to "issue tab" and see the relevant issues.
 	Link : https://github.com/taeguk/vim-taeguk/issues/1
+
 	
 ETC
 ---
