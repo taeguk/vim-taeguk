@@ -4,7 +4,13 @@ vim-taeguk
 About
 -----
 
-######Automatically adjust settings to taeguk's vimsetting and install useful plugins.
+######Taeguk's Vim Setting!
+######Automatically adjust vim settings to taeguk's things and install useful plugins.
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 Installing
 ----------
