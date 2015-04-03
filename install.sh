@@ -57,6 +57,7 @@ fi
 echo -e "\n[*] install start!"
 rm -rf ~/.vim ~/.vimrc
 cp -rf .vim .vimrc ~/
+hash git || (bash git_install_home.sh && exit 1)
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 echo "[*] install finish!"
