@@ -53,6 +53,9 @@ then
 		echo "[*] task calcelled!"
 		exit 1
 	fi
+else
+	echo "[*] cp -rf .vim ~/"
+	cp -rf .vim ~/
 fi
 
 echo -e "\n[*] checking if ~/.vimrc exists..."
@@ -82,6 +85,9 @@ then
 		echo "[*] task calcelled!"
 		exit 1
 	fi
+else
+	echo "[*] cp -rf .vimrc ~/"
+	cp -rf .vimrc ~/
 fi
 
 echo -e "\n[*] Plugin managing start!"
