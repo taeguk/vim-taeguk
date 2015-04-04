@@ -1,7 +1,7 @@
 vim-taeguk
 =============
 
-###Release Version v1.1 and v1.1.1 has a critical bug. Please install the newest or v1.1.2 up.
+###Notice : Release Version v1.1 and v1.1.1 has a critical bug. Please install the newest or v1.1.2 up.
 
 About
 -----
