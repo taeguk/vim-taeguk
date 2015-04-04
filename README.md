@@ -1,6 +1,8 @@
 vim-taeguk
 =============
 
+###Release Version v1.1 and v1.1.1 has a critical bug. Please install the newest or v1.1.2 up.
+
 About
 -----
 
@@ -16,11 +18,11 @@ __How to install the newest vim-taeguk__
 	cd vim-taeguk/
 	bash install.sh
 	
-__How to install the release version v1.1.1__
+__How to install the release version v1.1.2__
 
-	wget https://github.com/taeguk/vim-taeguk/archive/v1.1.1.tar.gz
-	tar -xvzf v1.1.1.tar.gz
-	cd vim-taeguk-1.1.1/
+	wget https://github.com/taeguk/vim-taeguk/archive/v1.1.2.tar.gz
+	tar -xvzf v1.1.2.tar.gz
+	cd vim-taeguk-1.1.2/
 	bash install.sh
 	
 __abbreviation__
