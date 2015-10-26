@@ -60,17 +60,14 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-set shiftwidth=4
-set ts=4
+set et
 set ruler
 set foldmethod=marker
 
-set tabstop=4
 set mouse=a
 set incsearch
 "set expandtab
 set smarttab
-set softtabstop=4
 
 set laststatus=2
 set cindent
@@ -88,13 +85,21 @@ set t_Co=256
 "syntax on
 
 set nobackup
-set tags=tags
+set tags=~/OS-pintos/pintos/src/tags
 set ignorecase
 set smartcase
 
 set showmatch
 "set ai
 set nu
+
+" for GNU C indent style
+set cindent
+set cinoptions=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+2,(0,u0,w1,m1
+set shiftwidth=2
+set softtabstop=2
+set textwidth=79
+set fo-=ro fo+=cql
 
 "for vim-powerline
 "language en_US.UTF-8
